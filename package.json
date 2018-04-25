@@ -1,9 +1,31 @@
 {
+  "name": "sharefile",
+  "version": "1.0.0",
+  "description": "file sharing to the world !",
+  "main": "index.js",
   "dependencies": {
     "localtunnel": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "sharefile": "./index.js",
     "share": "./index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy6804tw/sharefile.git"
+  },
+  "keywords": [
+    "file",
+    "share"
+  ],
+  "author": "Tsai,Yi-Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andy6804tw/sharefile/issues"
+  },
+  "homepage": "https://github.com/andy6804tw/sharefile#readme"
 }
