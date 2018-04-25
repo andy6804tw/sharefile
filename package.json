@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "sharefile": "./index.js",
+    "sharefile": "./main.js",
     "share": "./index.js"
   },
   "repository": {
