@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "localtunnel": "^1.9.0"
+  },
+  "bin": {
+    "sharefile": "./index.js",
+    "share": "./index.js"
+  }
+}
