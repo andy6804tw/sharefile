@@ -1,11 +1,10 @@
-//透過http模組啟動web server服務
-const http = require('http')
-const fs = require('fs')
+const http = require('http');
+const fs = require('fs');
 const localtunnel = require('localtunnel');
 
 const PORT = 3000;
 const server = http.createServer(function (req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end(fs.readFileSync('./' + decodeURI(req.url)));
 })
 
@@ -28,8 +27,8 @@ if (process.argv[2] != undefined) {
   }
 
 } else {
-  console.log('usage:')
-  console.log('       share [file ..]       be sure to your file ')
+  console.log('usage:');
+  console.log('       share [file ..]       be sure to your file ');
 }
 
 
