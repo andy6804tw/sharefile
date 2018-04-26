@@ -1,6 +1,6 @@
 {
   "name": "sharefile",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "file sharing to the world !",
   "main": "index.js",
   "dependencies": {
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "sharefile": "./main.js",
+    "sharefile": "./index.js",
     "share": "./index.js"
   },
   "repository": {

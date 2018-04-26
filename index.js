@@ -18,7 +18,6 @@ if (process.argv[2] != undefined) {
   
   try {
     var tunnel = localtunnel(PORT, function (err, tunnel) {
-      console.log(tunnel.url);
       const something = tunnel.url + '/' + encodeURI(process.argv[2]);
       console.log(something);
     });
