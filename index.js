@@ -5,7 +5,6 @@ const localtunnel = require('localtunnel');
 
 const PORT = 3000;
 const server = http.createServer(function (req, res) {
-  console.log(req.url);
   if (req.url != '/favicon.ico' && req.url != '/robots.txt') {
     res.writeHead(200);
     res.end(fs.readFileSync('./' + decodeURI(req.url)));
