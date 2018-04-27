@@ -1,4 +1,5 @@
 [![GitHub license][license-image]][license-url]
+[![Coverage Status](https://coveralls.io/repos/github/andy6804tw/sharefile/badge.svg?branch=master)](https://coveralls.io/github/andy6804tw/sharefile?branch=master)
 # ShareFile
 file sharing to the world !
 
