@@ -5,6 +5,10 @@
 # ShareFile
 file sharing to the world !
 
+- no occupy cloud storage.
+- no file size limit.
+- use your localhost tunnel to share files
+
 <img src="screenshot/demo.gif" width="600">
 
 ## Install
@@ -21,6 +25,11 @@ Generate share URL link.
 
 sharefile demo.png
 ```
+
+> tip: `ctrl+c` to break command line
+
+## LICENSE
+MIT
 
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
