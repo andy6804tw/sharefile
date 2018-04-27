@@ -18,7 +18,9 @@ const server = http.createServer(function (req, res) {
 server.listen(config.port);
 
 // get URL link
-creatTunnel.getURL(process.argv[2]);
+creatTunnel.getURL(process.argv[2]).then((result) => {
+  console.log(result);
+});
 
 // catch Exception
 process.on('uncaughtException', (err) => {
