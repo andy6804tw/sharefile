@@ -1,38 +1,27 @@
 #!/usr/bin/env node
 const http = require('http');
 const fs = require('fs');
-const localtunnel = require('localtunnel');
 
-const PORT = 3000;
+const creatTunnel = require('./src/lib/creatTunnel');
+const config = require('./src/config/config');
+
+// create server
 const server = http.createServer(function (req, res) {
   if (req.url != '/favicon.ico' && req.url != '/robots.txt') {
     res.writeHead(200);
+    // file system
     res.end(fs.readFileSync('./' + decodeURI(req.url)));
   }
 })
 
+// start server
+server.listen(config.port);
 
-if (process.argv[2] != undefined) {
+// get URL link
+creatTunnel.getURL(process.argv[2]);
 
-  // //設定服務監聽localhost:3000(127.0.0.1/:3000)
-  server.listen(PORT);
-  // //qrcode.generate(something, { small: true });
-
-  try {
-    var tunnel = localtunnel(PORT, function (err, tunnel) {
-      const something = tunnel.url + '/' + encodeURI(process.argv[2]);
-      console.log(something);
-    });
-  }
-  catch (err) {
-    console.log('Error!');
-  }
-
-} else {
-  console.log('usage:');
-  console.log('       share [file ..]       be sure to your file ');
-}
-
-
-
-
+// catch Exception
+process.on('uncaughtException', (err) => {
+  console.log('whoops! There was an connection error. Please wait a moment and retry it !');
+  process.exit(1);
+});
