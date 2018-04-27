@@ -8,6 +8,7 @@
     "localtunnel": "^1.9.0"
   },
   "devDependencies": {
+    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
     "mocha": "^5.1.1",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "start": "node index.js demo.png",
-    "test": "nyc mocha --timeout 60000 --exit",
+    "test": "nyc mocha  --require babel-register --timeout 60000 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "bin": {

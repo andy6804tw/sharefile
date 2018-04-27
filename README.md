@@ -1,5 +1,7 @@
-[![GitHub license][license-image]][license-url]
+[![Build Status](https://travis-ci.org/andy6804tw/sharefile.svg?branch=master)](https://travis-ci.org/andy6804tw/sharefile)
 [![Coverage Status](https://coveralls.io/repos/github/andy6804tw/sharefile/badge.svg?branch=master)](https://coveralls.io/github/andy6804tw/sharefile?branch=master)
+[![GitHub license][license-image]][license-url]
+
 # ShareFile
 file sharing to the world !
 
