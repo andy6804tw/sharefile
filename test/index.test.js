@@ -1,6 +1,5 @@
 /* global describe it */
-const chai = require('chai');
-const expect = chai.expect;    // Using Expect style
+import { expect } from 'chai';
 
 const creatTunnel = require('./../src/lib/creatTunnel');
 
