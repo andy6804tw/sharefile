@@ -1,9 +1,10 @@
 {
   "name": "sharefile",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "file sharing to the world !",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "localtunnel": "^1.9.0"
   },
   "devDependencies": {
@@ -13,7 +14,6 @@
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
-    "dotenv": "^5.0.1",
     "mocha": "^5.1.1",
     "nyc": "^11.7.1"
   },
