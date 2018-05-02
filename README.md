@@ -1,3 +1,4 @@
+[![NPM version][npm-image]][npm-url] 
 [![Build Status](https://travis-ci.org/andy6804tw/sharefile.svg?branch=master)](https://travis-ci.org/andy6804tw/sharefile)
 [![Coverage Status](https://coveralls.io/repos/github/andy6804tw/sharefile/badge.svg?branch=master)](https://coveralls.io/github/andy6804tw/sharefile?branch=master)
 [![GitHub license][license-image]][license-url]
@@ -39,6 +40,12 @@ Promote this project so that more people recognize it !
 ## LICENSE
 MIT
 
+## Reference
+http://stackabuse.com/read-files-with-node-js/
+
+
+[npm-image]: https://img.shields.io/badge/npm-v1.3.0-blue.svg
+[npm-url]: https://www.npmjs.com/package/sharefile
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: https://github.com/andy6804tw/sharefile/blob/master/LICENSE
