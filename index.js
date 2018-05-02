@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-const express = require('express')
-const fs = require('mz/fs')
-const path = require('path')
+const express = require('express');
+const fs = require('mz/fs');
+const path = require('path');
 
 const creatTunnel = require('./src/lib/creatTunnel');
 const config = require('./src/config/config');
 
-const app = express()
+const app = express();
 
 app.use(async (req, res) => {
   const fpath = path.join(__dirname, req.path);
@@ -29,7 +29,7 @@ creatTunnel.getURL(process.argv[2]).then((result) => {
   console.log(result);
 });
 
-app.listen(config.port, () => console.log('Example app listening on port 3000!'))
+app.listen(config.port);
 
 
 // catch Exception
