@@ -9,7 +9,8 @@ const config = require('./src/config/config');
 const app = express();
 
 app.use(async (req, res) => {
-  const fpath = path.join(__dirname, req.path);
+  // const fpath = path.join(__dirname, req.path);
+  const fpath = `.${decodeURI(req.url)}`;
   if (await fs.exists(fpath)) {
     var stat = await fs.stat(fpath)
     if (await stat.isFile()) {

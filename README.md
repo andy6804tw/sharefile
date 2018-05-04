@@ -44,7 +44,7 @@ MIT
 http://stackabuse.com/read-files-with-node-js/
 
 
-[npm-image]: https://img.shields.io/badge/npm-v1.3.2-blue.svg
+[npm-image]: https://img.shields.io/badge/npm-v1.3.3-blue.svg
 [npm-url]: https://www.npmjs.com/package/sharefile
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
