@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/andy6804tw/sharefile.svg?branch=master)](https://travis-ci.org/andy6804tw/sharefile)
 [![Coverage Status](https://coveralls.io/repos/github/andy6804tw/sharefile/badge.svg?branch=master)](https://coveralls.io/github/andy6804tw/sharefile?branch=master)
 [![NPM version][npm-image]][npm-url] 
+[![npm](https://img.shields.io/npm/dt/sharefile.svg?style=flat-square)](https://www.npmjs.com/package/sharefile)
 [![GitHub license][license-image]][license-url]
 
 # ShareFile
